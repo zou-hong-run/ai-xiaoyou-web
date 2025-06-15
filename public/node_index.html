@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>智能对话体(接入讯飞星火大模型)</title>
+    <script src="./js/lib/base64.js"></script>
+    <script src="./js/lib/crypto-js.js"></script>
+    <script src="./js/lib/live2d/live2dcubismcore.js"></script>
+    <script src="./js/lib/live2d/live2d.min.js"></script>
+    <script src="./js/lib/live2d/pixi-live2d-display.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <h3>有任何异常，刷新页面就好了</h3>
+    <div class="container">
+      <select name="" id="speaker">
+        <option value="x4_lingxiaoyun_talk">小芸</option>
+        <option value="x4_lingxiaoyao_em">小瑶</option>
+        <option value="x4_lingxiaolu_en">小璐</option>
+        <option value="x4_yezi">讯飞小露</option>
+        <option value="x4_lingbosong">伯松</option>
+      </select>
+      <div id="wave" class="wave"></div>
+      <button id="start-btn" class="record-btn">开始对话</button>
+      <button id="stop-btn" class="record-btn">停止对话</button>
+      <!-- <h3>播放音频</h3> -->
+      <!-- <audio id="audioPlayer" controls></audio> -->
+      <!-- 新增状态显示区域 -->
+      <div id="status-display" class="status-display">
+        当前状态：<span id="status-text">等待开始</span>
+      </div>
+      <canvas></canvas>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

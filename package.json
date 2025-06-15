@@ -1,0 +1,32 @@
+{
+  "name": "xiaozuo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.27",
+    "@types/recordrtc": "^5.6.14",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@pixi/filter-alpha": "^7.4.3",
+    "@pixi/filter-ascii": "^5.1.1",
+    "@pixi/filter-crt": "^5.1.1",
+    "@pixi/filter-noise": "^7.4.3",
+    "@pixi/filter-outline": "^4.1.5",
+    "@pixi/filter-pixelate": "^5.1.1",
+    "@tensorflow-models/speech-commands": "^0.5.4",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@vitejs/plugin-basic-ssl": "^2.0.0",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "pixi-live2d-display": "^0.4.0",
+    "pixi.js": "6.5.10",
+    "recordrtc": "^5.6.2"
+  }
+}

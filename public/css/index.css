@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#status-display {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+}
+
+#status-text {
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.record-btn {
+  width: 48%;
+  padding: 12px;
+  margin: 10px 1%;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* .record-btn:hover {
+  background-color: #64a6ec;
+} */
+
+.record-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#wave {
+  margin: 20px 0;
+  width: 100%;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* 波浪动画 */
+.wave {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.wave::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    #007bff 10%,
+    transparent 10%,
+    transparent 50%,
+    #007bff 50%,
+    #007bff 90%,
+    transparent 90%
+  );
+  background-size: 200% 100%;
+  animation: wave-animation 1.5s infinite linear;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

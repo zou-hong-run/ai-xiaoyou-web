@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>AI小左</title>
+    <script src="./public/js/lib/live2d/live2dcubismcore.min.js"></script>
+    <script src="./public/js/lib/live2d/live2d.min.js"></script>
+  </head>
+  <body>
+    <canvas style="background-color: skyblue"></canvas>
+    <h1>中英文语音命令识别系统</h1>
+
+    <div class="container">
+      <div class="control-panel">
+        <h2>控制面板</h2>
+
+        <div>
+          <label for="languageSelect">选择语言模式:</label>
+          <select id="languageSelect">
+            <option value="english">英文命令</option>
+            <option value="chinese">中文命令</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="commandSelect">选择命令:</label>
+          <select id="commandSelect"></select>
+        </div>
+
+        <div>
+          <button id="recordBtn">录制命令</button>
+          <button id="noiseBtn">录制背景噪音</button>
+        </div>
+
+        <div>
+          <button id="trainBtn">训练中文模型</button>
+        </div>
+
+        <div>
+          <button id="startBtn">开始识别</button>
+          <button id="stopBtn" disabled>停止识别</button>
+        </div>
+
+        <div>
+          <button id="saveModelBtn">保存中文模型</button>
+          <button id="loadModelBtn">加载中文模型</button>
+          <input type="file" id="modelFileInput" accept=".bin" class="hidden" />
+        </div>
+
+        <div id="status">准备就绪...</div>
+      </div>
+
+      <div class="result-panel">
+        <h2>识别结果</h2>
+        <div id="result">等待识别结果...</div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

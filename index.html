@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>AI小左</title>
+    <script src="./public/js/lib/live2d/live2dcubismcore.min.js"></script>
+    <script src="./public/js/lib/live2d/live2d.min.js"></script>
+    <script src="./public/js/lib/base64.js"></script>
+    <script src="./public/js/lib/crypto-js.js"></script>
+  </head>
+  <body>
+    <h1>AI小左智能对话机器人</h1>
+    <!-- <div id="ai-dialog-container">
+      <div id="ai-dialog-background">
+        <div id="ai-dialog-text"></div>
+      </div>
+    </div>
+    <div id="user-dialog-container">
+      <div id="user-dialog-background">
+        <div id="user-dialog-text"></div>
+      </div>
+    </div> -->
+    <button
+      id="startBtn"
+    >
+      开始
+    </button>
+    <canvas id="live2dCanvas"></canvas>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
