@@ -1,5 +1,7 @@
 # AI小左网页版智能对话机器人（数字人，虚拟人）
 
+![image](https://github.com/user-attachments/assets/b47b6082-e85d-4ac7-a6d9-3333951882ce)
+
 ## 项目概述
 一个基于WebSocket的智能语音助手系统，集成语音识别(IAT)、语音合成(TTS)和AI对话(Spark API)功能，支持自定义功能扩展。
 
